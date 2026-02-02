@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Sai Sree</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #fff6f3, #fdecec);
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card {
+    background: white;
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    animation: fadeIn 1.5s ease;
+    z-index: 2;
+  }
+
+  h1 {
+    color: #c94b6a;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    display: block;
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .yes {
+    background: #c94b6a;
+    color: white;
+  }
+
+  .always {
+    background: #f2f2f2;
+    color: #333;
+  }
+
+  footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #999;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Floating hearts */
+  .heart {
+    position: absolute;
+    bottom: -20px;
+    font-size: 20px;
+    color: rgba(201,75,106,0.4);
+    animation: floatUp 8s linear infinite;
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(0); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<script>
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "🌸";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (6 + Math.random() * 4) + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 10000);
+  }, 700);
+</script>
+
+<div class="card">
+  <h1>For Sai Sree 🌸</h1>
+
+  <p>
+    This isn’t a big question,  
+    and it isn’t a serious one.<br><br>
+
+    It’s just me,  
+    feeling grateful for you,  
+    and liking you a little extra today.<br><br>
+
+    There’s no pressure here —  
+    just a quiet moment,  
+    and a simple smile if you feel it too.<br><br>
+
+    If you’re comfortable,  
+    would you be my Valentine this year?
+  </p>
+
+  <a class="btn yes" href="https://wa.me/916281583706?text=Of%20course%20💗">
+    💖 Of course
+  </a>
+
+  <a class="btn always" href="https://wa.me/916281583706?text=Always%20with%20you%20🌸">
+    🌿 Always with you
+  </a>
+
+  <footer>
+    Made gently, just for you
+  </footer>
+</div>
+
+</body>
+</html>
